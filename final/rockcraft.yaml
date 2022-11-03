@@ -1,0 +1,19 @@
+name: final 
+summary: Chiselled Ubuntu - OpenSSL
+description: |
+  A Chiselled Ubuntu image with just the
+  needed bits and pieces of OpenSSL
+license: GPL-3.0
+
+version: 0.1
+base: bare
+build-base: "ubuntu:22.04"
+
+platforms:
+  amd64:
+
+parts:
+  openssl:
+    plugin: nil
+    stage-packages:
+      - openssl_bins

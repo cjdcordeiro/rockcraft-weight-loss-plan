@@ -1,0 +1,19 @@
+name: halfway 
+summary: Tiny ROCK only with OpenSSL
+description: |
+  A very small ROCK, with only the OpenSSL 
+  package and its dependencies inside.
+license: GPL-3.0
+
+version: 0.1
+base: bare
+build-base: "ubuntu:22.04"
+
+platforms:
+  amd64:
+
+parts:
+  openssl:
+    plugin: nil
+    stage-packages:
+      - openssl

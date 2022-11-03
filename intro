@@ -1,0 +1,48 @@
+#!/bin/bash
+
+clear
+# export PS1=$'\W\[$(tput sgr0)\]\\[\e[31m\\]\xe2\x98\x85 > \\[\e[0m\\]'
+
+echo "Rockcraft's 5-min weight loss plan" | boxes -d columns -a c
+
+next_slide() {
+    while [ true ] ; do
+        read -t 3 -n 1
+        if [ $? = 0 ] ; then
+            break ;
+        fi
+    done
+    while [ true ] ; do
+        read -t 3 -n 1
+        if [ $? = 0 ] ; then
+            break ;
+        fi
+    done
+}
+
+next_slide
+echo '''
+##########################################
+#                                        #
+#                                        #
+#                                        #
+#                                        #
+#                                        #
+#                                        #
+#                                        #
+#          ####################          #     #####################
+#          #                  #          #     #                   #          
+#          #                  #          #     #                   #          
+#          #      #######     #          #     #      #######      #     #######          
+#          #      #     #     #          #     #      #     #      #     #     #          
+#          #      #     #     #          #     #      #     #      #     #     #
+#          #      #######     #          #     #      #######      #     #######
+#          ####################          #     #####################
+##########################################                          
+'''
+
+next_slide
+
+echo Spot the differences! | boxes -d unicornsay -a c
+
+echo

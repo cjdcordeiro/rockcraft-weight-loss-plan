@@ -1,0 +1,18 @@
+name: beginning 
+summary: Ubuntu with OpenSSL
+description: |
+  An Ubuntu 22.04-based image, with the 
+  OpenSSL package installed.
+license: GPL-3.0
+
+version: 0.1
+base: "ubuntu:22.04"
+
+platforms:
+  amd64:
+
+parts:
+  openssl:
+    plugin: nil
+    stage-packages:
+      - openssl
